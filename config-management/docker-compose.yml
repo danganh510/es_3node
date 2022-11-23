@@ -88,17 +88,17 @@ services:
     volumes:
       - data03:/usr/share/elasticsearch/data
       - certs:$CERTS_DIR
-  kibana:
-    container_name: kb-container
-    image: docker.elastic.co/kibana/kibana:$ES_VERSION
-    environment:
-      - ELASTICSEARCH_HOSTS=${ELASTIC_URL}
-    networks:
-      - es-net
-    depends_on:
-      - elasticsearch
-    ports:
-      - 5601:5601
+  # kibana:
+  #   container_name: kb-container
+  #   image: docker.elastic.co/kibana/kibana:$ES_VERSION
+  #   environment:
+  #     - ELASTICSEARCH_HOSTS=${ELASTIC_URL}
+  #   networks:
+  #     - es-net
+  #   depends_on:
+  #     - elasticsearch
+  #   ports:
+  #     - 5601:5601
       
   # monstache:
   #   image: rwynn/monstache:6.7.2
