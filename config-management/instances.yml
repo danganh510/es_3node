@@ -1,0 +1,21 @@
+instances:
+  - name: es01
+    dns:
+      - es01
+      - $HOST
+    ip:
+      - $IP
+
+  - name: es02
+    dns:
+      - es02
+      - $HOST
+    ip:
+      - $IP
+
+  - name: es03
+    dns:
+      - es03
+      - $HOST
+    ip:
+      - $IP
