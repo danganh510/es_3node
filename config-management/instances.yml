@@ -2,20 +2,20 @@ instances:
   - name: es01
     dns:
       - es01
-      - $HOST
+      - "localhost"
     ip:
-      - $IP
+      - 172.26.0.188
 
   - name: es02
     dns:
       - es02
       - $HOST
     ip:
-      - $IP
+      - 172.26.0.188
 
   - name: es03
     dns:
       - es03
       - $HOST
     ip:
-      - $IP
+      - 172.26.0.188
